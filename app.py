@@ -16,4 +16,4 @@ def embed_text():
     return jsonify(embeddings_list)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3777) 
+    app.run(host='0.0.0.0', port=3000) 

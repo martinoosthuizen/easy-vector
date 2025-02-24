@@ -29,13 +29,13 @@ This project provides a simple RESTful API for generating vector embeddings usin
 
 1. **Start the Flask application**:
    ```bash
-   gunicorn -b 0.0.0.0:3777 app:app
+   gunicorn -b 0.0.0.0:3000 app:app
    ```
 
 2. **Test the API**:
    Use a tool like `curl` or Postman to test the `/embed` endpoint. For example:
    ```bash
-   curl -X POST http://localhost:3777/embed -H "Content-Type: application/json" -d '{"documents": ["This is a test document.", "Another document."]}'
+   curl -X POST http://localhost:3000/embed -H "Content-Type: application/json" -d '{"documents": ["This is a test document.", "Another document."]}'
    ```
 
 ### Running with Docker
@@ -47,11 +47,11 @@ This project provides a simple RESTful API for generating vector embeddings usin
 
 2. **Run the Docker container**:
    ```bash
-   docker run -p 3777:3777 easy-vector
+   docker run -p 3000:3000 easy-vector
    ```
 
 3. **Access the API**:
-   The API will be accessible at `http://localhost:3777/embed`.
+   The API will be accessible at `http://localhost:3000/embed`.
 
 ## Deployment
 
